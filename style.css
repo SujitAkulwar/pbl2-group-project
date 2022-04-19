@@ -4,7 +4,14 @@
     box-sizing: border-box;
     max-width: 100%;
     max-height: 100%;
+}
+body {
+    background: lightblue url(image/library-1834222.jpg) no-repeat fixed center ;
+    background-size: cover;
+}
 
+header{
+    flex:1;
 }
 
 .top{ 
@@ -13,43 +20,42 @@
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
     
 }
 
 
+
 .item1, .item3{
-    padding: 2px 1px;
-    height: 13vh;
-    width: 13vh;
+    padding: 0vh 0vh;
+    width: 10vh;
 }
 .item2{
     /* PES’s Modern College of Engineering, Pune BOOK MANAGEMENT SYSTEM */
     float: center;
     text-align: center;  
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
 .colname{
-    font-weight:bold;
-    word-spacing: 3px;
+    font-weight:bolder;
+    word-spacing: .1vh;
     display: flex;
     justify-content: center;
+    color: rgb(255, 255, 255);
 }
 
 .nav_bar {
-    background-color: rgba(203, 105, 0, 0.829);
     padding: 15px;
-    padding-left: 10px;
-    border-radius: 10px;
-    margin: 20px;
+    padding-left: 10vh;
+    border-radius: 10vh;
+    margin: 10vh;
     /* position: -webkit-sticky; */
-    position: sticky;
-    top: 1px;
+    top: 1vh;
     overflow: hidden;
     box-sizing: border-box;
-    box-shadow:  20px 20px 55px #b5b5b5,
-             -20px -20px 55px #ffffff;
     flex: 1;
 
 }
@@ -57,52 +63,48 @@
 .navi2{
     float: right;
     text-decoration: none;
-    color: #000000;
-    font-size: 4vh;
+    color: white;
+    font-size: 3vh;
     font-weight: bold;
-    padding-left: 5vh;
+    padding-left: 2vh;
     padding-right: 2vh;
-    margin-right: 5vh;
-    border-left: .5vh solid black;
+    margin-right: 2vh;
+    /*border-left: .5vh solid white;*/
 }
 
 .nava{
     flex:1;
-    height: 5vh;
 }
 
 .navi{
     display: inline-block;
-    color: #000;
+    color: white;
     font-size: 4vh;
     text-decoration: none;
     border-right: .5vh solid black;
-    margin-left: 5vh;
+    margin-left: 2vh;
     margin-right: 2vh;
-    padding-right: 5vh;
+    padding-right: 2vh;
     padding-left: 2vh;
     text-decoration: none;
     font-weight: bold;
 }
 
 
-.navi:hover{
-    color: #ff0000;
+.navi2:hover{
+     color: green; 
 }
 
 
-.navi::after{
+.navi2::after{
     content: '';
     display: block;
     width: 0;
-    height: 2px;
-    background: #000;
-    transition: width .3s;
+    height: .25vh;
+    transition: width .5s;
 }
 
-.navi:hover::after{
-    
-    color: #000;
+.navi2:hover::after{
     width: 100%;
     transition: width .3s;
 }
