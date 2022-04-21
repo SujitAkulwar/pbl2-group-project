@@ -143,7 +143,6 @@ header{
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	
 }
 
 @media only screen and (min-width: 1200px) {
@@ -153,5 +152,3 @@ header{
 		margin: 1.5%;
 	}
 }
-
-
