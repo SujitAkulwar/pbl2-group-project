@@ -73,7 +73,8 @@ header{
 }
 
 .nav_bar {
-    padding: 15px;
+
+    padding: 30px 15px 0 0;
     padding-left: 10vh;
     border-radius: 10vh;
     overflow: hidden;
@@ -83,6 +84,17 @@ header{
 }
 
 .navi2{
+
+    float: left;
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-right: 2vh;
+}
+.navi3{
     float: right;
     text-decoration: none;
     color: white;
@@ -121,37 +133,46 @@ header{
 
 
 #year .year2 {
+    padding-top: 60px;
     display: flex;
-    flex: 1;
-    padding: 2vh;
-    margin: 2vh;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
-.year1 h2{
+.year1{
     font-weight:bold;
     word-spacing: .1vh;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
     justify-content: center;
-    color: rgb(255, 255, 255);
-    background-color: black;
+    width: 45vh;
+    height: 25vh;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-
+/* 
 @media only screen and (min-width: 768px) {
 
-	/* Services Section */
+	Services Section
 	#year .year2 .year1 {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
 	
-}
+} */
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
 	
 	#year .year2 .year1 {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
-}
+} */
 
 
