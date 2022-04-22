@@ -44,7 +44,7 @@
         }
 
 
-        .container1{
+        .container1 {
             border-right: 2px solid black;
             padding-right: 100px;
         }
@@ -53,11 +53,11 @@
             text-align: center;
             background-color: #f2f2f2;
             width: 400px;
-            height: 500px;
+            height: 550px;
             padding: 50px 20px 0px 20px;
             border: 1px solid lightgray;
             border-radius: 30px;
-            
+
 
 
 
@@ -253,23 +253,33 @@
 
                 <hr>
                 <br>
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email" id="name">
                 <br>
                 <br>
-                <input type="password" name="password" placeholder="password">
+                <input type="password" name="password" placeholder="password" id="password">
+
+                <br>
+                <br>
 
 
-                <br><br><br>
 
-
-
-                <button class="cta">
-                    <span><a href="./home.php">login</a></span>
+                <button class="cta" >
+                    <span type="submit" id="btn"><a href="./logout.php" >login</a></span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                 </button>
+                <br><br>
+
+
+
+
+
+                <a href="./signup.php">
+                    <p>New User? signup here</p>
+                </a>
+
                 </form>
             </div>
         </div>
@@ -280,5 +290,24 @@
 </body>
 <?php
 ?>
+
+<script>
+    const btn = document.querySelector('btn');
+    const s1 = document.querySelector('name')
+    const s2 = document.querySelector('password')
+
+
+    btn.onclick = (event) => {
+
+        
+
+        if (s1.value === '' || s1.value == null) {
+            alert("Fill all the information ....");
+        } else {
+           
+            window.location.href = "file:///D:/pbl2/sub/1y.html#"
+        }
+    };
+</script>
 
 </html>

@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -33,8 +33,6 @@
             font-size: 17px;
             padding: 8px;
             background-color: rgb(173, 212, 230);
-
-
         }
 
         .parent {
@@ -53,7 +51,7 @@
             text-align: center;
             background-color: #f2f2f2;
             width: 400px;
-            height: 500px;
+            height: 550px;
             padding: 50px 20px 0px 20px;
             border: 1px solid lightgray;
             border-radius: 30px;
@@ -75,7 +73,8 @@
 
 
         input[type="password"],
-        input[type="email"] {
+        input[type="email"],input[type="date"],
+        input[type="text"] {
             font-family: Mochiy Pop P One;
             width: 100%;
             padding: 15px;
@@ -108,6 +107,16 @@
             margin-bottom: 10px;
         }
 
+        input[type="date"] {
+            background-color: rgb(190, 194, 224);
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            background-color: rgb(190, 194, 224);
+            margin-bottom: 10px;
+        }
+
 
         ::placeholder {
             color: rgb(57, 17, 97);
@@ -119,7 +128,9 @@
 
 
         input[type="email"]:hover,
-        input[type="password"]:hover {
+        input[type="password"]:hover,
+        input[type="date"]:hover,
+        input[type="text"]:hover {
             background-color: rgba(78, 79, 80, 0.322);
         }
 
@@ -249,14 +260,16 @@
             <div class="container">
 
                 <form action=""></form>
-                <h1 class="Heading">Login</h1>
+                <h1 class="Heading">signup</h1>
 
                 <hr>
-                <br>
                 <input type="email" name="email" placeholder="Email">
                 <br>
-                <br>
                 <input type="password" name="password" placeholder="password">
+                <br>
+                <input type="date" name="date" placeholder="dateofbirth">
+                <br>
+                <input type="text" name="number" placeholder="mobileno"
 
 
                 <br><br><br>
@@ -264,21 +277,25 @@
 
 
                 <button class="cta">
-                    <span><a href="./home.php">login</a></span>
+                    <span><a href="./logout.php">signup</a></span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                 </button>
+ 
+                <br>
+
+                <a style="color: black;" href="./login.php"><p>already an user? login</p></a>
                 </form>
             </div>
         </div>
 
     </div>
-
+    <?php
+?>
 
 </body>
-<?php
-?>
+
 
 </html>

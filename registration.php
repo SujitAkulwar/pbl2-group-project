@@ -1,13 +1,13 @@
 <?php
 
 session_start();
-header('location:index.html')
+header('location:index.html');
 $con = mysql_connect('localhost','root','');
 
 mysqli_select_db($con,'test');
 
-$name=$_POST['user']
-$pass=$_POST['password']
+$name=$_POST['user'];
+$pass=$_POST['password'];
 
 $s="select * signuptable where username = '$name'";
 $result = mysqli_query($con,$s);
