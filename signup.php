@@ -207,7 +207,7 @@
 
             <div class="container">
 
-                <form action=""></form>
+                <form action="registration.php"></form>
                 <h1 class="Heading">signup</h1>
 
                 <hr>
@@ -215,17 +215,15 @@
                 <br>
                 <input type="password" name="password" placeholder="password">
                 <br>
-                <input type="date" name="date" placeholder="dateofbirth">
-                <br>
-                <input type="text" name="number" placeholder="mobileno"
+                
 
 
                 <br><br><br>
 
 
 
-                <button class="cta">
-                    <span><a href="loginafter.php">signup</a></span>
+                <button class="cta" type="submit" >
+                    <span><a>Signup</a></span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>

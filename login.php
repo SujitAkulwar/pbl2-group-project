@@ -142,7 +142,7 @@
             color: #234567;
         }
 
-        .cta svg {
+        .cta svg{
             position: relative;
             top: 0;
             margin-left: 10px;
@@ -184,7 +184,7 @@
 
             <div class="container">
 
-                <form action="registration.php" method="post">
+                <form action="validation.php" method="post">
                 <h1 class="Heading">Login</h1>
 
                 <hr><br>

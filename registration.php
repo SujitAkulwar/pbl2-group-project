@@ -1,26 +1,27 @@
 <?php
 
 session_start();
-header('location:index.html');
+
 $con = mysql_connect('localhost','root','');
 
-mysqli_select_db($con,'test');
+mysqli_select_db($con,'userresistration');
 
 $name=$_POST['email'];
 $pass=$_POST['password'];
 
-$s="select * signuptable where email = '$name'";
+$s="SELECT * usertable where email = '$name'";
 $result = mysqli_query($con,$s);
 
-$num = mysql_num_row($result);
+$num = mysql_num_rows($result);
 
-if($num==1){
+if($num == 1){
     echo"email id already exist !!";
 
 }else{
-    $reg="insert into signuptable(email,password) values ('$name','$pass')";
+    $reg="INSERT INTO 'usertable'('email' ,'password') VALUES ('$name' , '$pass')";
     mysqli_query($con,$reg);
     echo"registration successful";
+    header('location:loginafter.php');
 }
 
 ?>

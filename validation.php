@@ -6,20 +6,22 @@ $con = mysql_connect('localhost','root','');
 
 mysqli_select_db($con,'test');
 
-$name=$_POST['user']
-$pass=$_POST['password']
+$name =$_POST['email'];
 
-$s="select * signuptable where username = '$name' && password='$pass'";
+$password =$_POST['password'];
+
+$s="select * signuptable where email = '$name' && password='$pass'";
 $result = mysqli_query($con,$s);
 
-$num = mysql_num_row($result);
+$num = mysql_num_rows($result);
 
 if($num==1){
     $_SESSION['username']=$name;
-    header('location:index.php')
+    header('location:loginafter.php');
 
-}else{
-    header('location:index.php')
+}
+else{
+    header('location:login.php');
 }
 
 ?>
