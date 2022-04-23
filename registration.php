@@ -6,19 +6,19 @@ $con = mysql_connect('localhost','root','');
 
 mysqli_select_db($con,'test');
 
-$name=$_POST['user'];
+$name=$_POST['email'];
 $pass=$_POST['password'];
 
-$s="select * signuptable where username = '$name'";
+$s="select * signuptable where email = '$name'";
 $result = mysqli_query($con,$s);
 
 $num = mysql_num_row($result);
 
 if($num==1){
-    echo"username already taken";
+    echo"email id already exist !!";
 
 }else{
-    $reg="insert into signuptable(username,password) values ('$name','$pass')";
+    $reg="insert into signuptable(email,password) values ('$name','$pass')";
     mysqli_query($con,$reg);
     echo"registration successful";
 }

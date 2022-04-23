@@ -134,58 +134,6 @@
             background-color: rgba(78, 79, 80, 0.322);
         }
 
-        /* @media screen and (min-width:1000px) {
-            button {
-                margin-left: 40%;
-            }
-
-        }
-
-        @media screen and (min-width:701px) and (max-width:1000px) {
-            button {
-                margin-left: 35%;
-            }
-        }
-
-        @media screen and (min-width:401px) and (max-width:700px) {
-            button {
-                margin-left: 25%;
-            }
-        }
-
-        @media screen and (max-width:400px) {
-
-            .container {
-                text-align: center;
-                background-color: #f2f2f2;
-                padding: 10px 20px 30px 20px;
-                border: 1px solid lightgray;
-                border-radius: 30px;
-                width: 100%;
-                height: 300px; 
-                margin-top: 10px;
-                margin-bottom: 10px;
-
-
-            }
-
-
-
-            body {
-                font-family: Mochiy Pop P One;
-                margin: 3% 3%;
-                margin-top: 50px;
-                margin-bottom: 50px;
-                font-size: 17px;
-                padding: 0px;
-
-
-
-            }
-
-        } */
-
-        /* From cssbuttons.io by @alexmaracinaru */
         .cta {
             position: relative;
             margin: auto;
@@ -277,7 +225,7 @@
 
 
                 <button class="cta">
-                    <span><a href="./logout.php">signup</a></span>
+                    <span><a href="loginafter.php">signup</a></span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>

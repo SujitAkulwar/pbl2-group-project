@@ -69,11 +69,6 @@
         }
 
 
-
-
-
-
-
         input[type="password"],
         input[type="email"] {
             font-family: Mochiy Pop P One;
@@ -84,16 +79,11 @@
             border-radius: 30px;
             color: rgb(88, 45, 138);
             font-weight: bolder;
-
-            /* background: linear-gradient(145deg, #2149cc, #b44747); */
             box-shadow: 8px 8px 16px #aaaaaa,
                 -8px -8px 16px #ffffff;
 
 
         }
-
-
-
 
 
         input[type="email"] {
@@ -108,7 +98,6 @@
             margin-bottom: 10px;
         }
 
-
         ::placeholder {
             color: rgb(57, 17, 97);
             font-weight: bolder;
@@ -116,65 +105,12 @@
         }
 
 
-
-
         input[type="email"]:hover,
         input[type="password"]:hover {
             background-color: rgba(78, 79, 80, 0.322);
         }
 
-        /* @media screen and (min-width:1000px) {
-            button {
-                margin-left: 40%;
-            }
 
-        }
-
-        @media screen and (min-width:701px) and (max-width:1000px) {
-            button {
-                margin-left: 35%;
-            }
-        }
-
-        @media screen and (min-width:401px) and (max-width:700px) {
-            button {
-                margin-left: 25%;
-            }
-        }
-
-        @media screen and (max-width:400px) {
-
-            .container {
-                text-align: center;
-                background-color: #f2f2f2;
-                padding: 10px 20px 30px 20px;
-                border: 1px solid lightgray;
-                border-radius: 30px;
-                width: 100%;
-                height: 300px; 
-                margin-top: 10px;
-                margin-bottom: 10px;
-
-
-            }
-
-
-
-            body {
-                font-family: Mochiy Pop P One;
-                margin: 3% 3%;
-                margin-top: 50px;
-                margin-bottom: 50px;
-                font-size: 17px;
-                padding: 0px;
-
-
-
-            }
-
-        } */
-
-        /* From cssbuttons.io by @alexmaracinaru */
         .cta {
             position: relative;
             margin: auto;
@@ -248,35 +184,26 @@
 
             <div class="container">
 
-                <form action=""></form>
+                <form action="registration.php" method="post">
                 <h1 class="Heading">Login</h1>
 
-                <hr>
-                <br>
-                <input type="email" name="email" placeholder="Email" id="name">
-                <br>
-                <br>
-                <input type="password" name="password" placeholder="password" id="password">
-
-                <br>
-                <br>
-
-
+                <hr><br>
+                <input type="email" name="email" placeholder="email" class="form-control">
+                <br><br>
+                <input type="password" name="password" placeholder="password" class="password">
+                <br><br>
 
                 <button class="cta" >
-                    <span type="submit" id="btn"><a href="./logout.php" >login</a></span>
+                    <span type="submit" id="btn"><a href="loginafter.php" >login</a></span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                 </button>
+                </form>
                 <br><br>
 
-
-
-
-
-                <a href="./signup.php">
+                <a href="signup.php">
                     <p>New User? signup here</p>
                 </a>
 
@@ -286,28 +213,10 @@
 
     </div>
 
-
 </body>
 <?php
 ?>
 
-<script>
-    const btn = document.querySelector('btn');
-    const s1 = document.querySelector('name')
-    const s2 = document.querySelector('password')
 
-
-    btn.onclick = (event) => {
-
-        
-
-        if (s1.value === '' || s1.value == null) {
-            alert("Fill all the information ....");
-        } else {
-           
-            window.location.href = "file:///D:/pbl2/sub/1y.html#"
-        }
-    };
-</script>
 
 </html>
