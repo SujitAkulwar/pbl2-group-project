@@ -50,16 +50,18 @@
         <!-- btn for filter books -->
         <div id="main" class="box1">
             <div>Select Subject</div>
+            <form id="addform" class="form-inline"></form>
             <div class="btnforsub">
                 <div class="btnforsubul">
-                    <div class="btnforsubli">ppl</div>
-                    <div class="btnforsubli">se</div>
+                    <button class="btn btn-select flaot" id="btnppl" onclick="ppl_fun">ppl</button>
+                    <button class="btn btn-select flaot" id="btnse" onclick="se_fun">se</button>
                 </div>
             </div>
+            
         </div>
 
         <div class="pdf">
-                <div class="se">
+                <div class="se" id="se">
                     <ul class="subpdful">
                         <li class="subpdfli1">
                             software engineering book
@@ -68,17 +70,17 @@
                             author : name
                         </li>
                         <li class="subpdfli4">
-                            type
+                            type : book
                         </li>
                         <li class="subpdfli5">
-                            size of pdf
+                            size of pdf : x MB
                         </li>
                         <li class="subpdfli6">
                             <a href="sppu.png">download</a>
                         </li>
                     </ul>
                 </div>
-                <div class="se">
+                <div class="se" id="se">
                     <ul class="subpdful">
                         <li class="subpdfli1">
                             software engineering book
@@ -87,10 +89,86 @@
                             author : name
                         </li>
                         <li class="subpdfli4">
-                            type
+                            type : book
                         </li>
                         <li class="subpdfli5">
-                            size of pdf
+                            size of pdf : x MB
+                        </li>
+                        <li class="subpdfli6">
+                            <a href="sppu.png">download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ppl" id="ppl">
+                    <ul class="subpdful">
+                        <li class="subpdfli1">
+                            ppl book
+                        </li>
+                        <li class="subpdfli2">
+                            author : name
+                        </li>
+                        <li class="subpdfli4">
+                            type : book
+                        </li>
+                        <li class="subpdfli5">
+                            size of pdf : x MB
+                        </li>
+                        <li class="subpdfli6">
+                            <a href="sppu.png">download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div  class="ppl" id="ppl">
+                    <ul class="subpdful">
+                        <li class="subpdfli1">
+                            ppl book
+                        </li>
+                        <li class="subpdfli2">
+                            author : name
+                        </li>
+                        <li class="subpdfli4">
+                            type : book
+                        </li>
+                        <li class="subpdfli5">
+                            size of pdf : x MB
+                        </li>
+                        <li class="subpdfli6">
+                            <a href="sppu.png">download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div  class="ppl" id="ppl">
+                    <ul class="subpdful">
+                        <li class="subpdfli1">
+                            ppl book
+                        </li>
+                        <li class="subpdfli2">
+                            author : name
+                        </li>
+                        <li class="subpdfli4">
+                            type : book
+                        </li>
+                        <li class="subpdfli5">
+                            size of pdf : x MB
+                        </li>
+                        <li class="subpdfli6">
+                            <a href="sppu.png">download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div  class="ppl" id="ppl">
+                    <ul class="subpdful">
+                        <li class="subpdfli1">
+                            ppl book
+                        </li>
+                        <li class="subpdfli2">
+                            author : name
+                        </li>
+                        <li class="subpdfli4">
+                            type : book
+                        </li>
+                        <li class="subpdfli5">
+                            size of pdf : x MB
                         </li>
                         <li class="subpdfli6">
                             <a href="sppu.png">download</a>
@@ -103,6 +181,34 @@
         </div>
     </div>
 
+    <script>
     
+
+    // document.getElementById("btnse").onclick = function(o) {
+    //     document.getElementById("ppl").style.display = "block";
+    // }
+
+    // document.getElementById("btnppl").onclick = function(o) {
+    //     document.getElementById("ppl").style.display = "none";
+    // }
+function ppl_fun (){
+    var ppl = document.getElementById("btnppl");
+    var se = document.getElementById("btnse");
+    ppl.style.display = "block";
+    se.style.display = "none";
+}
+
+function se_fun(){
+    var ppl = document.getElementById("btnppl");
+    var se = document.getElementById("btnse");
+    ppl.style.display = "none";
+    se.style.display = "block";
+}
+    
+    
+
+
+
+</script>
 </body>
 </html>
