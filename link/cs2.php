@@ -49,26 +49,23 @@
 
         <!-- btn for filter books -->
         <div id="main" class="box1">
-            <h2>Select Subject</h2>
+            <div>Select Subject</div>
             <div class="btnforsub">
                 <div class="btnforsubul">
                     <div class="btnforsubli">ppl</div>
                     <div class="btnforsubli">se</div>
-</div>
+                </div>
             </div>
         </div>
 
-            <div class="pdf">
+        <div class="pdf">
                 <div class="se">
                     <ul class="subpdful">
                         <li class="subpdfli1">
                             software engineering book
                         </li>
                         <li class="subpdfli2">
-                            author :
-                        </li>
-                        <li class="subpdfli3">
-                            author_name
+                            author : name
                         </li>
                         <li class="subpdfli4">
                             type
@@ -77,7 +74,26 @@
                             size of pdf
                         </li>
                         <li class="subpdfli6">
-                            <a href="sppu.png">link</a>
+                            <a href="sppu.png">download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="se">
+                    <ul class="subpdful">
+                        <li class="subpdfli1">
+                            software engineering book
+                        </li>
+                        <li class="subpdfli2">
+                            author : name
+                        </li>
+                        <li class="subpdfli4">
+                            type
+                        </li>
+                        <li class="subpdfli5">
+                            size of pdf
+                        </li>
+                        <li class="subpdfli6">
+                            <a href="sppu.png">download</a>
                         </li>
                     </ul>
                 </div>

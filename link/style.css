@@ -157,10 +157,10 @@ header{
     padding: 1vh;
     text-decoration: none;
     border-radius: 2vh;
+    font-weight: bolder;
 }
 
 .btnforsub{
-    border: .2vh;
     border-color: black;
 }
 
@@ -168,14 +168,43 @@ header{
     display: inline-flex;
     border-radius: 1vh;
     border-color: aliceblue;
-    border: .2vh;
 }
 
 .btnforsubli{
-    border: .2vh;
     border-radius: 1vh;
     background-color: black;
     color: white;
     margin: 0vh 2vh ;
+    padding: 0vh 2vh;
+    align-items: center;
+    font-size: 3vh;
+
 }
 
+.pdf{
+    display: flex;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1vh;
+    padding: 1vh;
+    text-decoration: none;
+    border-radius: 2vh;
+}
+
+.se{
+    background-color: antiquewhite;
+    flex: 1;
+    display: flex;
+    margin: 2vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    max-width: 40vh;
+    border: 2px;
+    border-color: black;
+}
+
+.subpdfli6{
+    font-weight: bolder;
+}
