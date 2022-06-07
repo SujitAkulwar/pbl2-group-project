@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-weight: 600;
+    box-sizing: border-box;
 }
 
 html {
@@ -187,10 +189,7 @@ header {
 }
 
 .pdf {
-    /* display: flex; */
     flex: 1;
-    /* background-color: rgb(255, 255, 255); */
-
     font-size: 3vh;
     font-family: 'Courier New', Courier, monospace;
     margin: 1vh;
@@ -200,14 +199,12 @@ header {
 }
 
 .se {
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     flex: 1;
-    /* display: flex; */
     margin: 2vh;
     padding: 2vh;
     border-radius: 2vh;
@@ -239,11 +236,6 @@ header {
     min-width: 40vh;
 }
 
-/* header{
-    position:-webkit-sticky;
-    position: sticky;
-    top: 0;
-} */
 
 .subpdfli6 {
     font-weight: bolder;

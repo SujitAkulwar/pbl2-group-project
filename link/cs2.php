@@ -53,14 +53,14 @@
             <form id="addform" class="form-inline"></form>
             <div class="btnforsub">
                 <div class="btnforsubul">
-                    <button class="btn btn-select flaot" id="btnppl" onclick="ppl_fun">ppl</button>
-                    <button class="btn btn-select flaot" id="btnse" onclick="se_fun">se</button>
+                    <button class="btn btn-select flaot" id="btnppl" onclick="ppl_fun()">ppl</button>
+                    <button class="btn btn-select flaot" id="btnse" onclick="se_fun()">se</button>
                 </div>
             </div>
 
         </div>
 
-        <div class="pdf">
+        <div class="pdf" id="pdf">
             <div class="col_1">
                 <div class="se" id="se">
                     <ul class="subpdful">
@@ -100,7 +100,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="ppl" id="ppl">
+                <div class="se" id="se">
                     <ul class="subpdful">
                         <li class="subpdfli1">
                             ppl book
@@ -187,31 +187,15 @@
 
     <script>
 
-
-        // document.getElementById("btnse").onclick = function(o) {
-        //     document.getElementById("ppl").style.display = "block";
-        // }
-
-        // document.getElementById("btnppl").onclick = function(o) {
-        //     document.getElementById("ppl").style.display = "none";
-        // }
         function ppl_fun() {
-            var ppl = document.getElementById("btnppl");
-            var se = document.getElementById("btnse");
-            ppl.style.display = "block";
-            se.style.display = "none";
+            document.getElementById("ppl").style.display = "none";
+            document.getElementById("se").style.display = "block";
         }
 
         function se_fun() {
-            var ppl = document.getElementById("btnppl");
-            var se = document.getElementById("btnse");
-            ppl.style.display = "none";
-            se.style.display = "block";
+            document.getElementById("ppl").style.display = "block";
+            document.getElementById("se").style.display = "none";
         }
-
-
-
-
 
     </script>
 </body>
