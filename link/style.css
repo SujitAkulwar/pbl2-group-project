@@ -1,28 +1,28 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 html {
-	font-family: 'Montserrat', sans-serif;
-	scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
-div{
+div {
     text-decoration: none;
 }
 
 body {
-    background: lightblue url(library-1834222.jpg) no-repeat fixed center ;
+    background: lightblue url(library-1834222.jpg) no-repeat fixed center;
     background-size: cover;
-    
+
 }
 
-header{
-    flex:1;
+header {
+    flex: 1;
 }
 
-.top{ 
+.top {
     flex: 1;
     display: flex;
     padding-top: 4vh;
@@ -30,57 +30,62 @@ header{
     padding-right: 5vh;
     justify-content: space-between;
     align-items: center;
-	object-fit: cover;
+    object-fit: cover;
 }
 
 .item1 {
     margin-left: 8vh;
     padding: 2vh;
 }
-.item3{
+
+.item3 {
     padding: 2vh;
     margin-right: 8vh;
 }
-.item1 img{
+
+.item1 img {
     max-width: 15vh;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7.5px );
-    -webkit-backdrop-filter: blur( 7.5px );
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
     border-radius: 2vh;
 }
-.item3 img{
+
+.item3 img {
     max-width: 15vh;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7.5px );
-    -webkit-backdrop-filter: blur( 7.5px );
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
     border-radius: 2vh;
 }
-.item2{
+
+.item2 {
     /* PES’s Modern College of Engineering, Pune BOOK MANAGEMENT SYSTEM */
     float: center;
-    text-align: center; 
+    text-align: center;
     font-family: 'Fredoka One', cursive;
 }
 
 
-#name1{
-    font-weight:bolder;
+#name1 {
+    font-weight: bolder;
     word-spacing: .3vh;
     justify-content: center;
     color: rgb(255, 255, 200);
     font-size: 5vh;
     text-shadow: 22vh 22vh 32vh rgb(0, 0, 0);
 }
-#name2{
-    font-weight:bolder;
+
+#name2 {
+    font-weight: bolder;
     word-spacing: .3vh;
     justify-content: center;
     color: rgb(255, 255, 200);
     font-size: 5vh;
     text-shadow: 2vh 2vh 3vh rgb(0, 0, 0);
-} 
+}
 
 .nav_bar {
     padding: 15px;
@@ -89,11 +94,11 @@ header{
     overflow: hidden;
     box-sizing: border-box;
     flex: 1;
-    
+
 
 }
 
-.navi1{
+.navi1 {
     float: left;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -108,7 +113,7 @@ header{
     /* width: 1vh;*/
 }
 
-.navi2{
+.navi2 {
     float: right;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -120,31 +125,34 @@ header{
     border: 2px solid rgba(0, 0, 0, 0);
     background-color: rgba(240, 255, 112, .8);
     border-radius: 3vh;
-   
+
 }
 
-.navi2:hover{
+.navi2:hover {
+
+
     border: 2px solid black;
     color: rgb(0, 0, 0);
-    background-image: rgba(240, 255, 112,1);
+
+    background-image: rgba(240, 255, 112, 1);
 
 }
 
-.nava{
-    flex:1;
+.nava {
+    flex: 1;
 }
 
-.navi{
+.navi {
     display: inline-block;
     text-decoration: none;
 }
 
-.box{
+.box {
     padding: 1vh;
     margin: 1vh;
 }
 
-.box1{
+.box1 {
     display: flex;
     flex: 1;
     background-color: bisque;
@@ -157,38 +165,32 @@ header{
     font-weight: bolder;
 }
 
-.btnforsub{
+.btnforsub {
     border-color: rgb(139, 139, 139);
 }
 
-.btnforsubul{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-#btnppl{
-    justify-content: center;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-#btnse{
-    justify-content: center;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-#btnsub{
-    justify-content: center;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+.btnforsubul {
+    display: inline-flex;
+    border-radius: 1vh;
+    border-color: aliceblue;
 }
 
-.pdf{
-    background-color: rgb(255, 255, 255);
+.btnforsubli {
+    border-radius: 1vh;
+    background-color: rgb(255, 160, 160);
+    color: white;
+    margin: 0vh 2vh;
+    padding: 0vh 2vh;
+    align-items: center;
+    font-size: 3vh;
+
+}
+
+.pdf {
+    /* display: flex; */
+    flex: 1;
+    /* background-color: rgb(255, 255, 255); */
+
     font-size: 3vh;
     font-family: 'Courier New', Courier, monospace;
     margin: 1vh;
@@ -197,31 +199,58 @@ header{
     border-radius: 2vh;
 }
 
+.se {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    flex: 1;
+    /* display: flex; */
+    margin: 2vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    border: 2px;
+    border-color: black;
+}
 
+#ppl {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    flex: 1;
+    display: hidden;
+    margin: 2vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    border: 2px;
+    border-color: black;
+    width: 33%;
+}
 
-.subpdful{
+.subpdful {
     max-height: 50vh;
     max-width: 50vh;
     min-height: 30vh;
     min-width: 40vh;
-    display: flex;
-    flex-direction: column;
 }
 
-#coll{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+/* header{
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+} */
 
-.subpdfli6{
+.subpdfli6 {
     font-weight: bolder;
 }
 
-#coll{
-    display : flex;
-    justify-content: center;
+.col_1,
+.col_2 {
+    display: flex;
+
 }
