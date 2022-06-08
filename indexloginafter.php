@@ -35,7 +35,7 @@
         <div class="nav_bar">
             <nav class="nava">
                 <a class="navi"><img src=""></a>
-                <a class="navi1" href="loginafter.php">HOME</a>
+                <a class="navi1" href="indexloginafter.php">HOME</a>
                 <a class="navi2" href="index.php">LOGOUT</a>
                 <a class="navi2" href="about.html">ABOUT</a>
                 <a class="navi2" href="help.html">HELP</a>
@@ -67,7 +67,7 @@
                 <div class="icon"><img src="" /></div>
                 <h2 id="h2">Second Year</h2>
                 <div class="branch">
-                    <a class="branch1" href="index.php">CSE</a>
+                    <a class="branch1" href="cs2loginafter.php">CSE</a>
                     <a class="branch1" href="index.php">IT</a>
                     <a class="branch1" href="index.php">AI-ML</a>
                 </div>
@@ -117,5 +117,4 @@
     </section>
 
 </body>
-
 </html>

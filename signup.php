@@ -207,11 +207,11 @@
 
             <div class="container">
 
-                <form action="registration.php"></form>
+                <form action="registration.php">
                 <h1 class="Heading">signup</h1>
 
                 <hr>
-                <input type="email" name="email" placeholder="Email">
+                <input type="name" name="name" placeholder="name">
                 <br>
                 <input type="password" name="password" placeholder="password">
                 <br>
@@ -229,7 +229,7 @@
                         <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                 </button>
- 
+                </form>
                 <br>
 
                 <a style="color: black;" href="./login.php"><p>already an user? login</p></a>

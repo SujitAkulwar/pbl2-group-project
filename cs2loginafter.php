@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="link/style.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -35,10 +35,10 @@
         <div class="nav_bar">
             <nav class="nava">
                 <a class="navi"><img src=""></a>
-                <a class="navi1" href="index.php">HOME</a>
-                <a class="navi2" href="login.php">LOGIN</a>
-                <a class="navi2" href="about.html">ABOUT</a>
-                <a class="navi2" href="help.html">HELP</a>
+                <a class="navi1" href="indexloginafter.php">HOME</a>
+                <a class="navi2" href="index.php">logout</a>
+                <a class="navi2" href="#">ABOUT</a>
+                <a class="navi2" href="#">HELP</a>
             </nav>
         </div>
 
@@ -49,13 +49,11 @@
 
         <!-- btn for filter books -->
         <div id="main" class="box1">
-            <div>Select Subject</div>
+            <div class="subject">Select Subject</div>
             <form id="addform" class="form-inline"></form>
             <div class="btnforsub">
-                <div class="btnforsubul">
-                    <button class="btn btn-select flaot" id="btnppl" onclick="ppl_fun()">ppl</button>
-                    <button class="btn btn-select flaot" id="btnse" onclick="se_fun()">se</button>
-                </div>
+                <button class="btn btn-select flaot" id="btnppl" onclick="ppl_fun()">ppl</button>
+                <button class="btn btn-select flaot" id="btnse" onclick="se_fun()">se</button>
             </div>
 
         </div>

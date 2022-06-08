@@ -75,7 +75,7 @@ header {
     font-weight: bolder;
     word-spacing: .3vh;
     justify-content: center;
-    color: rgb(255, 255, 200);
+    color: rgb(255, 255, 82);
     font-size: 5vh;
     text-shadow: 22vh 22vh 32vh rgb(0, 0, 0);
 }
@@ -152,12 +152,13 @@ header {
 .box {
     padding: 1vh;
     margin: 1vh;
+    color: rgb(150, 192, 0);
 }
 
 .box1 {
     display: flex;
     flex: 1;
-    background-color: bisque;
+    background-color: rgba(24, 196, 35, 0.24);
     font-size: 3vh;
     font-family: 'Courier New', Courier, monospace;
     margin: 1vh;
@@ -179,7 +180,7 @@ header {
 
 .btnforsubli {
     border-radius: 1vh;
-    background-color: rgb(255, 160, 160);
+    background-color: rgb(20, 145, 60);
     color: white;
     margin: 0vh 2vh;
     padding: 0vh 2vh;
@@ -213,7 +214,6 @@ header {
 }
 
 #ppl {
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -245,4 +245,14 @@ header {
 .col_2 {
     display: flex;
 
+}
+#btnppl , #btnse{
+    margin-left: 25px;
+    font-weight: 700;
+    color: rgb(63, 0, 127);
+    background-color: rgb(147, 207, 28);
+}
+.subject{
+    color: rgb(213, 254, 65);
+    font-weight: 700;
 }

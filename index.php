@@ -67,7 +67,7 @@
                 <div class="icon"><img src="" /></div>
                 <h2 id="h2">Second Year</h2>
                 <div class="branch">
-                    <a class="branch1" href=".\link\cs2.php">CSE</a>
+                    <a class="branch1" href="cs2.php">CSE</a>
                     <a class="branch1" href="index.php">IT</a>
                     <a class="branch1" href="index.php">AI-ML</a>
                 </div>

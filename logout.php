@@ -35,8 +35,8 @@
         <div class="nav_bar">
             <nav class="nava">
                 <a class="navi"><img src=""></a>
-                <a class="navi1" href="./logout.php">HOME</a>
-                <a class="navi2" href="./index.php">LOGOUT</a>
+                <a class="navi1" href="logout.php">HOME</a>
+                <a class="navi2" href="index.php">LOGOUT</a>
                 <a class="navi2" href="about.html">ABOUT</a>
                 <a class="navi2" href="help.html">HELP</a>
             </nav>

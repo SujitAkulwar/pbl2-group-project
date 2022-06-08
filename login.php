@@ -188,13 +188,13 @@
                 <h1 class="Heading">Login</h1>
 
                 <hr><br>
-                <input type="email" name="email" placeholder="email" class="form-control">
+                <input type="name" name="name" placeholder="name" class="form-control">
                 <br><br>
                 <input type="password" name="password" placeholder="password" class="password">
                 <br><br>
 
                 <button class="cta" >
-                    <span type="submit" id="btn"><a href="loginafter.php" >login</a></span>
+                    <span type="submit" id="btn"><a href="indexloginafter.php" >login</a></span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>
@@ -206,8 +206,7 @@
                 <a href="signup.php">
                     <p>New User? signup here</p>
                 </a>
-
-                </form>
+                
             </div>
         </div>
 

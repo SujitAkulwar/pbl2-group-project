@@ -4,20 +4,20 @@ session_start();
 
 $con = mysql_connect('localhost','root','');
 
-mysqli_select_db($con,'test');
+mysqli_select_db($con,'userregistration');
 
-$name =$_POST['email'];
+$name =$_POST['name'];
 
 $password =$_POST['password'];
 
-$s="select * signuptable where email = '$name' && password='$pass'";
-$result = mysqli_query($con,$s);
+$s = " select * from usertable where name = '$name' && password='$password'";
+
+$result = mysqli_query($con, $s);
 
 $num = mysql_num_rows($result);
 
-if($num==1){
-    $_SESSION['username']=$name;
-    header('location:loginafter.php');
+if($num == 1){
+    // header('location:indexloginafter.php');
 
 }
 else{
