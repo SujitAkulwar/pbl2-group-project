@@ -26,7 +26,7 @@
             <nav class="item item2">
                 <a id="name1">PES's Modern College of Engineering, Pune</h3><a>
                         <br>
-                        <a id="name2">E-BOOK MANAGEMENT SYSTEM</a>
+                        <a id="name2">E-LIBRARY MANAGEMENT SYSTEM</a>
             </nav>
             <nav class="item item3"><img src="./image/mcoe.png" alt="">
         </div>
@@ -36,7 +36,7 @@
             <nav class="nava">
                 <a class="navi"><img src=""></a>
                 <a class="navi1" href="indexloginafter.php">HOME</a>
-                <a class="navi2" href="index.php">LOGOUT</a>
+                <a class="navi2" href="logout.php">LOGOUT</a>
                 <a class="navi2" href="about.html">ABOUT</a>
                 <a class="navi2" href="help.html">HELP</a>
             </nav>

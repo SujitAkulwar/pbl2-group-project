@@ -1,221 +1,111 @@
+<?php
+session_start();
+ 
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: logout.php");
+    exit;
+}
+ 
+require_once "config.php";
+$username = $password = "";
+$username_err = $password_err = $login_err = "";
+ 
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+ 
+    if(empty(trim($_POST["username"]))){
+        $username_err = "Please enter username.";
+    } else{
+        $username = trim($_POST["username"]);
+    }
+    
+    if(empty(trim($_POST["password"]))){
+        $password_err = "Please enter your password.";
+    } else{
+        $password = trim($_POST["password"]);
+    }
+    
+    if(empty($username_err) && empty($password_err)){
+        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        
+        if($stmt = mysqli_prepare($link, $sql)){
+            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            
+            $param_username = $username;
+            
+            if(mysqli_stmt_execute($stmt)){
+                mysqli_stmt_store_result($stmt);
+                
+                if(mysqli_stmt_num_rows($stmt) == 1){     
+                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                    if(mysqli_stmt_fetch($stmt)){
+                        if(password_verify($password, $hashed_password)){
+                            session_start();
+                            
+                            $_SESSION["loggedin"] = true;
+                            $_SESSION["id"] = $id;
+                            $_SESSION["username"] = $username;                            
+                            
+                            header("location: indexloginafter.php");
+                        } else{
+                            $login_err = "Invalid username or password.";
+                        }
+                    }
+                } else{
+                    $login_err = "Invalid username or password.";
+                }
+            } else{
+                echo "Oops! Something went wrong. Please try again later.";
+            }
+
+            mysqli_stmt_close($stmt);
+        }
+    }
+    
+    mysqli_close($link);
+}
+?>
+ 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        * {
-            box-sizing: border-box;
-            text-align: center;
-
-        }
-
-
-        a {
-            text-decoration: none;
-
-        }
-
-        a:hover {
-            color: black;
-        }
-
-
-        body {
-            font-family: Mochiy Pop P One;
-            margin: 5% 10% 5% 5%;
-            font-size: 17px;
-            padding: 8px;
-            background-color: rgb(173, 212, 230);
-
-
-        }
-
-        .parent {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-
-        .container1 {
-            border-right: 2px solid black;
-            padding-right: 100px;
-        }
-
-        .container {
-            text-align: center;
-            background-color: #f2f2f2;
-            width: 400px;
-            height: 550px;
-            padding: 50px 20px 0px 20px;
-            border: 1px solid lightgray;
-            border-radius: 30px;
-
-
-
-
-        }
-
-        .container2 {
-            padding-left: 2 0px;
-            /* padding */
-        }
-
-
-        input[type="password"],
-        input[type="email"] {
-            font-family: Mochiy Pop P One;
-            width: 100%;
-            padding: 15px;
-            border: 10px;
-            border: 1px solid grey;
-            border-radius: 30px;
-            color: rgb(88, 45, 138);
-            font-weight: bolder;
-            box-shadow: 8px 8px 16px #aaaaaa,
-                -8px -8px 16px #ffffff;
-
-
-        }
-
-
-        input[type="email"] {
-            background-color: rgb(207, 210, 231);
-            margin-top: 10px;
-            margin-bottom: 10px;
-
-        }
-
-        input[type="password"] {
-            background-color: rgb(190, 194, 224);
-            margin-bottom: 10px;
-        }
-
-        ::placeholder {
-            color: rgb(57, 17, 97);
-            font-weight: bolder;
-            font-family: Mochiy Pop P One;
-        }
-
-
-        input[type="email"]:hover,
-        input[type="password"]:hover {
-            background-color: rgba(78, 79, 80, 0.322);
-        }
-
-
-        .cta {
-            position: relative;
-            margin: auto;
-            padding: 12px 18px;
-            transition: all 0.2s ease;
-            border: none;
-            background: none;
-        }
-
-        .cta:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            border-radius: 50px;
-            background: #b1dae7;
-            width: 45px;
-            height: 45px;
-            transition: all 0.3s ease;
-        }
-
-        .cta span {
-            position: relative;
-            font-family: "Ubuntu", sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            color: #234567;
-        }
-
-        .cta svg{
-            position: relative;
-            top: 0;
-            margin-left: 10px;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke: #234567;
-            stroke-width: 2;
-            transform: translateX(-5px);
-            transition: all 0.3s ease;
-        }
-
-        .cta:hover:before {
-            width: 100%;
-            background: #b1dae7;
-        }
-
-        .cta:hover svg {
-            transform: translateX(0);
-        }
-
-        .cta:active {
-            transform: scale(0.95);
-        }
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 360px; padding: 20px; }
     </style>
 </head>
-
 <body>
-
-    <div class="parent">
-        <div class="container1">
-            <div>
-                <img src="./image/loginimg.png" alt="">
-            </div>
-        </div>
-        <div class="container2">
-
-
-
-            <div class="container">
-
-                <form action="validation.php" method="post">
-                <h1 class="Heading">Login</h1>
-
-                <hr><br>
-                <input type="name" name="name" placeholder="name" class="form-control">
-                <br><br>
-                <input type="password" name="password" placeholder="password" class="password">
-                <br><br>
-
-                <button class="cta" >
-                    <span type="submit" id="btn"><a href="indexloginafter.php" >login</a></span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                </button>
-                </form>
-                <br><br>
-
-                <a href="signup.php">
-                    <p>New User? signup here</p>
-                </a>
-                
-            </div>
-        </div>
-
+    <div>
+        <a href="index.php">home</a>
     </div>
+    <div class="wrapper">
+        <h2>Login</h2>
+        <p>Please fill in your credentials to login.</p>
 
+        <?php 
+        if(!empty($login_err)){
+            echo '<div class="alert alert-danger">' . $login_err . '</div>';
+        }        
+        ?>
+
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <span class="invalid-feedback"><?php echo $username_err; ?></span>
+            </div>    
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                <span class="invalid-feedback"><?php echo $password_err; ?></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Login">
+            </div>
+            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+        </form>
+    </div>
 </body>
-<?php
-?>
-
-
-
 </html>

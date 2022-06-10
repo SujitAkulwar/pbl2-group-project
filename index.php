@@ -26,7 +26,7 @@
             <nav class="item item2">
                 <a id="name1">PES's Modern College of Engineering, Pune</h3><a>
                         <br>
-                        <a id="name2">E-BOOK MANAGEMENT SYSTEM</a>
+                        <a id="name2">E-LIBRARY MANAGEMENT SYSTEM</a>
             </nav>
             <nav class="item item3"><img src="./image/mcoe.png" alt="">
         </div>

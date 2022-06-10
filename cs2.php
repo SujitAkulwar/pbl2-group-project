@@ -75,7 +75,7 @@
                             size of pdf : x MB
                         </li>
                         <li class="subpdfli6">
-                            <a href="sppu.png">download</a>
+                            <a href="https://drive.google.com/drive/mobile/folders/1YY67n2kC_RXi80XlqCTLyjD7JX34fmOT/1Ud-1YYkTyFzcYegRGv6IVtpIKns2XDrF/1opfL3YKlKHnLwNJRdmoQlb1AKvisfSSO/1-dcjYVkM_ZibGWlOH_h7o3pjdzHs9rci?usp=sharing&sort=13&direction=a">download</a>
                         </li>
                     </ul>
                 </div>
@@ -94,7 +94,7 @@
                             size of pdf : x MB
                         </li>
                         <li class="subpdfli6">
-                            <a href="sppu.png">download</a>
+                            <a href="https://drive.google.com/drive/mobile/folders/1YY67n2kC_RXi80XlqCTLyjD7JX34fmOT/1Ud-1YYkTyFzcYegRGv6IVtpIKns2XDrF/1opfL3YKlKHnLwNJRdmoQlb1AKvisfSSO/1-dcjYVkM_ZibGWlOH_h7o3pjdzHs9rci?usp=sharing&sort=13&direction=a">download</a>
                         </li>
                     </ul>
                 </div>
@@ -113,7 +113,7 @@
                             size of pdf : x MB
                         </li>
                         <li class="subpdfli6">
-                            <a href="sppu.png">download</a>
+                            <a href="https://drive.google.com/drive/mobile/folders/1YY67n2kC_RXi80XlqCTLyjD7JX34fmOT/1Ud-1YYkTyFzcYegRGv6IVtpIKns2XDrF/1opfL3YKlKHnLwNJRdmoQlb1AKvisfSSO/1-dcjYVkM_ZibGWlOH_h7o3pjdzHs9rci?usp=sharing&sort=13&direction=a">download</a>
                         </li>
                     </ul>
                 </div>
@@ -134,7 +134,7 @@
                             size of pdf : x MB
                         </li>
                         <li class="subpdfli6">
-                            <a href="sppu.png">download</a>
+                            <a href="shttps://drive.google.com/drive/mobile/folders/1YY67n2kC_RXi80XlqCTLyjD7JX34fmOT/1Ud-1YYkTyFzcYegRGv6IVtpIKns2XDrF/1opfL3YKlKHnLwNJRdmoQlb1AKvisfSSO/1-dcjYVkM_ZibGWlOH_h7o3pjdzHs9rci?usp=sharing&sort=13&direction=a">download</a>
                         </li>
                     </ul>
                 </div>
@@ -154,7 +154,7 @@
                             size of pdf : x MB
                         </li>
                         <li class="subpdfli6">
-                            <a href="sppu.png">download</a>
+                            <a href="https://drive.google.com/drive/mobile/folders/1YY67n2kC_RXi80XlqCTLyjD7JX34fmOT/1Ud-1YYkTyFzcYegRGv6IVtpIKns2XDrF/1opfL3YKlKHnLwNJRdmoQlb1AKvisfSSO/1-dcjYVkM_ZibGWlOH_h7o3pjdzHs9rci?usp=sharing&sort=13&direction=a">download</a>
                         </li>
                     </ul>
                 </div>
@@ -173,7 +173,7 @@
                             size of pdf : x MB
                         </li>
                         <li class="subpdfli6">
-                            <a href="sppu.png">download</a>
+                            <a href="https://drive.google.com/drive/mobile/folders/1YY67n2kC_RXi80XlqCTLyjD7JX34fmOT/1Ud-1YYkTyFzcYegRGv6IVtpIKns2XDrF/1opfL3YKlKHnLwNJRdmoQlb1AKvisfSSO/1-dcjYVkM_ZibGWlOH_h7o3pjdzHs9rci?usp=sharing&sort=13&direction=a">download</a>
                         </li>
                     </ul>
                 </div>
